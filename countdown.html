@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="del-countdown" class="text-center">
+		<div id="clock"></div>
+		<div id="units">
+			<span>Days</span>
+			<span>Hours</span>
+			<span>Minutes</span>
+			<span>Seconds</span>
+		</div>
+	</div>
+	<div id="buttonsAndStuff">
+		<div class="row form-inline">
+			<div class="form-group">
+			    <input type="text" class="form-control input-sm" id="inlineFormInputGroup" placeholder="Enter Days" valueid = "days">
+			    <input type="text" class="form-control input-sm" id="inlineFormInputGroup" placeholder="Enter Hours" valueid = "hours">
+			    <input type="text" class="form-control input-sm" id="inlineFormInputGroup" placeholder="Enter Min" valueid = "min">
+			    <input type="text" class="form-control input-sm" id="inlineFormInputGroup" placeholder="Enter Sec" valueid = "sec">
+			</div>
+			<button type="submit" class="btn btn-primary" id ="setTimer">Set</button>
+		</div>
+
+		<div id="timerButtons" class="text-center">
+			<button id="setTimer_popUp" class="btn btn-default">set timer</button>
+			<button id="startTimer" class="btn btn-default">start timer</button>
+			<button id="pauseTimer" class="btn btn-default">pause timer</button>
+			<button id="stopTimer" class="btn btn-default">stop timer</button>
+		</div>
+		<div id="quizButtons" class="text-center">
+			<button id="nextQuestion" class="btn btn-default">>>></button>
+			<button id="pauseAndShowSolution" class="btn btn-default" data-target="#myModal">Solution</button>
+			<button id="reviewQuestions_game" class="btn btn-default" data-target="#myModal">Review Questions</button>
+		</div>
+	</div>
+	<div id="Quizzes">
+		<p id="introduction">Start timer to begin quiz! There are four questions in this quiz that are related to conditional probability and combinatorics. Each question will be given equal time. You can set the timer, by clicking the set timer button. to be however long you want. If you don't set the timer, the default time will be 2 minutes to answer each question.</p>
+	</div>
+
+	<form id="answers" class="text-center">
+
+	</form>
+
+	<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+		    <div class="modal-header"></div>
+		    <div class="modal-body"></div>
+		    <div class="modal-footer">
+				<button type="button" data-dismiss="modal" aria-hidden="true" class="note"></button>
+			</div>
+		</div>
+	  </div>
+	</div>
+
+  	<script src="assets/javascript/countdown.js"></script>
+
+</body>
+</html>
