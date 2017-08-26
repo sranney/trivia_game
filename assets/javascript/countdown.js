@@ -184,6 +184,7 @@ $(document).ready(function(){
 			$("#startTimer").prop("disabled",false);
 			audioElement.get(0).play();
 			timerStarted=false;
+			timeRunout=[];
 		}
 		$(".modal-body").html(makeModal_solution());
 		return qID;
