@@ -35,7 +35,7 @@ $(document).ready(function(){
 			answer2:"12",
 			answer3:"14",
 			answer4:"16",
-			picture:"assets/images/jump.JPG",
+			picture:"assets/images/jump.png",
 			timeRemaining:0,
 			timeElapsed:0,
 			solution:"Each letter allows for two paths, except for the Ps on the outer most left and right sides.  Each of the outer most Ps allows for only one path.  Each of the outer most Ps are only accessible from one route from J through M, respectively.  Thus, these two outer most Ps represent only two possible paths of the total number of paths.  If those paths were available, if there was one more S on the right and one more S on the left, then for each letter there would be two potential paths. Thus there would be 2 * 2 * 2 * 2 potential paths, or 16 paths. As explained above, removing the two S's on the outer most left and right only removes two of the potential paths. Thus the actual number of paths possible in this game is 2^4 - 2 = 14 paths.",
